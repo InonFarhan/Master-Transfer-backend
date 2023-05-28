@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bitcoin-react/static/css/main.3ac44c8f.css",
+    "main.js": "/bitcoin-react/static/js/main.7f3a6291.js",
+    "static/js/787.28cb0dcd.chunk.js": "/bitcoin-react/static/js/787.28cb0dcd.chunk.js",
+    "static/media/spring.png": "/bitcoin-react/static/media/spring.c3a0629c3dd136134dc0.png",
+    "static/media/winter.png": "/bitcoin-react/static/media/winter.3c06f51bf218f11d3954.png",
+    "static/media/autumn.png": "/bitcoin-react/static/media/autumn.605800c5d417505ddbcf.png",
+    "static/media/logo.svg": "/bitcoin-react/static/media/logo.d92e68a63b2611f31564560dae67f264.svg",
+    "static/media/contacts.svg": "/bitcoin-react/static/media/contacts.7d29af82cc8e3d19a962b03d32d417a1.svg",
+    "index.html": "/bitcoin-react/index.html",
+    "static/media/dollar.svg": "/bitcoin-react/static/media/dollar.0096510d889a3c30ae9fe08ab17ec989.svg",
+    "static/media/delete.svg": "/bitcoin-react/static/media/delete.6deb1dc5b867f9be05d57f01bc71cb41.svg",
+    "static/media/edit.svg": "/bitcoin-react/static/media/edit.ff240f6214ef55030682871fcdcad20a.svg",
+    "static/media/logout.svg": "/bitcoin-react/static/media/logout.84b9915f2e86ba835f4ebece752fc311.svg",
+    "static/media/home.svg": "/bitcoin-react/static/media/home.0bf0964e254977129bbffb9ce2570002.svg",
+    "static/media/send.svg": "/bitcoin-react/static/media/send.47066ddef443e205baeeb9048da12225.svg",
+    "static/media/arrow_back.svg": "/bitcoin-react/static/media/arrow_back.35dc72382c8de321e3e446eba85fd73e.svg",
+    "static/media/add.svg": "/bitcoin-react/static/media/add.ab4039bce292debff08ac0380af34ff0.svg",
+    "main.3ac44c8f.css.map": "/bitcoin-react/static/css/main.3ac44c8f.css.map",
+    "main.7f3a6291.js.map": "/bitcoin-react/static/js/main.7f3a6291.js.map",
+    "787.28cb0dcd.chunk.js.map": "/bitcoin-react/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ac44c8f.css",
+    "static/js/main.7f3a6291.js"
+  ]
+}
