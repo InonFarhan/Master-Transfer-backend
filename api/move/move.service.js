@@ -30,6 +30,7 @@ async function add(move) {
             amount: move.amount,
             title: move.title,
             status: move.status,
+            fromNumber: move.fromNumber
         }
         const collection = await dbService.getCollection('move')
         await collection.insertOne(moveToAdd)
@@ -50,6 +51,7 @@ async function update(move) {
             amount: move.amount,
             title: move.title,
             status: move.status,
+            fromNumber: move.fromNumber
         }
         const collection = await dbService.getCollection('move')
         await collection.updateOne({ _id: ObjectId(move._id) }, { $set: moveToSave })
