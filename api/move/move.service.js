@@ -8,11 +8,13 @@ module.exports = {
     update
 }
 
-async function query(filterBy) {
+async function query(filterBy, sort = { by: 'at' }) {
+    // async function query(filterBy) {
     const criteria = _buildCriteria(filterBy)
     try {
         const collection = await dbService.getCollection('move')
-        let moves = await collection.find(criteria).toArray()
+        // let moves = await collection.find(criteria).toArray()
+        let moves = await collection.find(criteria).sort({ [sort.by]: 1 }).toArray()
         return moves
     } catch (err) {
         logger.error('cannot find users', err)
@@ -63,25 +65,28 @@ async function update(move) {
 function _buildCriteria(filterBy) {
     const criteria = {}
 
-    if (filterBy.loggedInUser) {
-        const userId = filterBy.loggedInUser._id;
-        criteria.$or = [
-            { fromId: { $eq: userId } },
-            { toId: { $eq: userId } }
-        ]
-    }
-    if (filterBy.to) {
-        criteria.toId = { $eq: filterBy.to._id };
-    }
+    if (filterBy.to) criteria.toId = { $eq: filterBy.to._id }
+
     if (filterBy.contact) {
-        const contactId = filterBy.contact._id;
+        const contactId = filterBy.contact._id
+        const userId = filterBy.loggedInUser._id
+
         criteria.$or = [
-            { fromId: { $eq: contactId } },
-            { toId: { $eq: contactId } }
+            {
+                $and: [
+                    { fromId: contactId },
+                    { toId: userId }
+                ]
+            },
+            {
+                $and: [
+                    { toId: contactId },
+                    { fromId: userId }
+                ]
+            }
         ]
     }
-    if (filterBy.status) {
-        criteria.status = { $eq: filterBy.status };
-    }
+
+    if (filterBy.status) criteria.status = { $eq: filterBy.status }
     return criteria
 }
