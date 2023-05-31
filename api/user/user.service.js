@@ -68,7 +68,6 @@ async function update(user) {
             email: user.email,
             phone: user.phone,
             coins: user.coins,
-            moves: user.moves,
             contacts: user.contacts,
         }
         const collection = await dbService.getCollection('user')
@@ -87,7 +86,6 @@ async function add(user) {
             email: user.email,
             phone: user.phone,
             coins: user.coins,
-            moves: user.moves,
             contacts: user.contacts,
             password: user.password
         }
