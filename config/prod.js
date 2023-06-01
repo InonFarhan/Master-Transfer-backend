@@ -5,7 +5,5 @@ require('dotenv').config()
 // }
 
 module.exports = {
-  dbURL: 'mongodb://127.0.0.1:27017',
-  dbName: 'bitcoin_db'
-  // dbURL: 'mongodb://127.0.0.1:27017/bitcoin_db',
+  dbURL: 'mongodb://127.0.0.1:27017/bitcoin_db',
 }
