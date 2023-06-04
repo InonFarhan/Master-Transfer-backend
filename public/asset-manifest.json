@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/bitcoin-react/static/css/main.63fcfd9e.css",
-    "main.js": "/bitcoin-react/static/js/main.69b130d8.js",
+    "main.js": "/bitcoin-react/static/js/main.a57e39e0.js",
     "static/js/787.28cb0dcd.chunk.js": "/bitcoin-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/Assistant-Bold.ttf": "/bitcoin-react/static/media/Assistant-Bold.8ce32fc768ffb230776b.ttf",
     "static/media/Assistant-Medium.ttf": "/bitcoin-react/static/media/Assistant-Medium.21f035dd574e9e732477.ttf",
     "static/media/Assistant-ExtraLight.ttf": "/bitcoin-react/static/media/Assistant-ExtraLight.dd2d47b5392bb21d0c34.ttf",
     "index.html": "/bitcoin-react/index.html",
     "main.63fcfd9e.css.map": "/bitcoin-react/static/css/main.63fcfd9e.css.map",
-    "main.69b130d8.js.map": "/bitcoin-react/static/js/main.69b130d8.js.map",
+    "main.a57e39e0.js.map": "/bitcoin-react/static/js/main.a57e39e0.js.map",
     "787.28cb0dcd.chunk.js.map": "/bitcoin-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.63fcfd9e.css",
-    "static/js/main.69b130d8.js"
+    "static/js/main.a57e39e0.js"
   ]
 }
